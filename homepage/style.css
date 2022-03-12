@@ -1,0 +1,437 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS GENERAL RULES */
+html {
+  /* Setting the root font size to 10px, to use it with responsive unites like rem */
+  font-size: 62%;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+
+/* End styling  the header section */
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  align-items: center;
+  padding: 4.2rem 1.2rem;
+  background-color: #ecf2ed;
+}
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  z-index: 9999;
+  padding-top: 0;
+  padding-bottom: 0;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+.header .logo {
+  height: 6.4rem;
+}
+.header .main-nav .main-nav-list {
+  display: flex;
+  list-style: none;
+  font-weight: 400;
+  font-size: 1.8rem;
+  gap: 4.8rem;
+  align-items: center;
+}
+.nav-link:link,
+.nav-link:visited {
+  /* border-bottom: 2px solid #2cb474; */
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #2cb474;
+  border-bottom: 4px solid #2cb474;
+  padding-bottom: 3px;
+  transition: all 0.2s;
+}
+.call-to-action:link,
+.call-to-action:visited {
+  background-color: #5cdc9c;
+  padding: 1.2rem;
+  border-radius: 9px;
+  display: inline-block;
+  color: #fff;
+  transition: all 0.3s;
+}
+.call-to-action:hover,
+.call-to-action:active {
+  background-color: #2cb474;
+  color: #ecf2ed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(0.95);
+}
+/* End styling  the header section */
+/* Start the slider styles */
+.slider {
+  max-width: 100%;
+  height: 85vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 85vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+}
+
+.slide--1 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(images/slider-1.jpg);
+  background-size: cover;
+}
+.slide--2 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(images/slider-2.jpg);
+  background-size: cover;
+}
+.slide--3 {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.9)
+    ),
+    url(images/slider-3.jpg);
+  background-size: cover;
+}
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+  font-size: 3.2rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  cursor: pointer;
+  background-color: #2cb474;
+  color: #ecf2ed;
+  border-radius: 50%;
+  padding-left: 0.8rem;
+  transform: translate(-50%, -50%);
+}
+.slider__btn--right {
+  right: 6%;
+}
+.slider__btn--left {
+  left: 6%;
+}
+.dots {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 10rem;
+  height: 10rem;
+  /* background-color: red; */
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dots__dot {
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dots__dot--active {
+  background-color: #2cb474;
+}
+
+.section-hero-paragraph {
+  text-align: center;
+  color: #eee;
+}
+
+/* End the slider styles */
+
+/* Start about us section */
+.about-us {
+  font-size: 1.8rem;
+  background-image: linear-gradient(
+      to left top,
+      rgba(244, 148, 30, 0.8),
+      rgba(236, 242, 237, 0.5)
+    ),
+    url(images/office.jpg);
+  background-size: cover;
+  height: 120rem;
+  padding-top: 8.4rem;
+  max-width: 100%;
+}
+.right-col {
+  position: relative;
+}
+/* .right-col-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(44, 180, 117, 0.123);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+} */
+.left-col {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.module {
+  padding: 1rem;
+  /* color: white; */
+  border-width: 3px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #2cb474, rgba(0, 0, 0, 0)) 10 0%;
+}
+/* .about-us-img {
+  max-width: 100%;
+  transition: all 0.3s;
+  background-size: cover;
+}
+
+.right-col:hover .right-col-overlay {
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  opacity: 1;
+} */
+.about-us-paragraph {
+  margin-bottom: 5rem;
+  line-height: 1.6;
+}
+
+/* Animated Text */
+.animated-text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+.animated-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.we-grow {
+  animation: showup 7s infinite;
+}
+.your-business {
+  width: 0px;
+  animation: reveal 7s infinite;
+}
+.your-business span {
+  margin-left: -355px;
+  animation: slidein 7s infinite;
+}
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -800px;
+  }
+  20% {
+    margin-left: -800px;
+  }
+  35% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0px;
+  }
+  20% {
+    opacity: 1;
+    width: 0px;
+  }
+  30% {
+    width: 355px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 355px;
+  }
+}
+/* End about us section */
+/* Start our Services */
+.our-services {
+  background-color: #ecf2ed;
+  padding-top: 8.4rem;
+}
+.our-services-cards {
+  padding: 4.2rem 0;
+}
+.our-services-card {
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  width: 90%;
+  position: relative;
+  transition: all 0.5s;
+}
+.card-image {
+  width: 100%;
+  /* overflow: hidden; */
+}
+.our-services-card h4 {
+  padding: 2rem;
+}
+.our-services-card p {
+  line-height: 2;
+  padding: 2rem;
+}
+.our-services-card-best {
+  background-color: rgba(244, 148, 30, 0.185);
+}
+.our-services-card:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+.our-services-card-best::after {
+  content: "Most Requested";
+  position: absolute;
+  color: #fff;
+  background-color: #f4941e;
+  top: 30px;
+  right: -50px;
+  padding: 0.5rem 4rem;
+  transform: rotate(45deg);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+/* End our Services */
+
+/* Start Team Section */
+.our-team {
+  padding-top: 8.4rem;
+}
+.our-team-card {
+  background-color: #ecf2ed;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+}
+.our-team-cards {
+  width: 100%;
+}
+.our-team-info {
+  padding: 1.2rem 1rem;
+}
+/* End Team Section */
+/* Start the footer section */
+.footer {
+  padding: 8.4rem 0;
+  font-size: 2rem;
+  background-image: linear-gradient(
+    to left top,
+    rgba(244, 148, 30, 0.8),
+    rgba(236, 242, 237, 0.5)
+  );
+}
+
+.first-col {
+  border-right: 2px solid #2cb474;
+  border-left: 2px solid #2cb474;
+  text-align: center;
+}
+.first-col .logo {
+  width: 15rem;
+}
+.second-col {
+  border-right: 2px solid #2cb474;
+  color: #555;
+}
+.second-col h5 {
+  margin-bottom: 1.2rem;
+}
+.second-col .our-services-list {
+  list-style: none;
+}
+.second-col .our-services-list li:not(:last-child) {
+  margin-bottom: 1.2rem;
+}
+.third-col {
+  border-right: 2px solid #2cb474;
+  color: #555;
+}
+.third-col h5 {
+  margin-bottom: 1.2rem;
+}
+.third-col .contact-list {
+  list-style: none;
+}
+.contact-list-social {
+  display: flex;
+  align-items: center;
+}
+.contact-list-social-icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.margin {
+  margin-bottom: 1rem;
+}
+.contact-list-social-image {
+  width: 25px;
+  margin: 0 1rem;
+}
+.contact-list-main {
+  list-style: none;
+}
+
+.footer p {
+  color: #777;
+}
+/* End the footer section */

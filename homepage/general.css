@@ -1,0 +1,79 @@
+/* Colors Scheme */
+
+/* CSS HEX 
+--carrot-orange: #f4941e;
+--snow-drift: #ecf2ed;
+--jungle-green: #2cb474;
+--nevada: #6d6e72;
+--vanilla: #cfb99e;
+--bay-leaf: #83ad9a;
+--scorpion: #5c5c5c;
+--pastel-green: #5cdc9c;
+--ocean-green: #449c74;
+
+
+   SCSS RGB
+--carrot-orange: rgba(244,148,30,1);
+--snow-drift: rgba(236,242,237,1);
+--jungle-green: rgba(44,180,116,1);
+--nevada: rgba(109,110,114,1);
+--vanilla: rgba(207,185,158,1);
+--bay-leaf: rgba(131,173,154,1);
+--scorpion: rgba(92,92,92,1);
+--pastel-green: rgba(92,220,156,1);
+--ocean-green: rgba(68,156,116,1); */
+
+.heading-primary {
+  text-align: center;
+  padding: 4.2rem 0;
+  font-size: 4.2rem;
+  color: #ecf2ed;
+}
+
+.heading-secondary {
+  text-align: center;
+  padding: 4.2rem 0;
+  font-size: 4.2rem;
+  color: #2cb474;
+}
+.heading-tertiary {
+  padding: 2.2rem 0;
+  font-size: 2rem;
+  color: #5cdc9c;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #5c5c5c;
+}
+p {
+  font-size: 1.5rem;
+}
+/* GRID */
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+}
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 4rem;
+}
+
+.margin-bottom-big {
+  margin-bottom: 8.4rem;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.larg-padding-top {
+  padding-top: 5rem;
+}
