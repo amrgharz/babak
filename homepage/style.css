@@ -186,6 +186,7 @@
   height: 120rem;
   padding-top: 8.4rem;
   max-width: 100%;
+  scroll-margin-top: 6rem;
 }
 .right-col {
   position: relative;
@@ -309,6 +310,7 @@
 .our-services {
   background-color: #ecf2ed;
   padding-top: 8.4rem;
+  scroll-margin-top: 6rem;
 }
 .our-services-cards {
   padding: 4.2rem 0;
@@ -356,6 +358,7 @@
 /* Start Team Section */
 .our-team {
   padding-top: 8.4rem;
+  scroll-margin-top: 6rem;
 }
 .our-team-card {
   background-color: #ecf2ed;
@@ -397,6 +400,114 @@
   }
 }
 /* End Team Section */
+
+/**************************/
+/* CTA SECTION */
+/**************************/
+
+.section-cta {
+  /* top / right / bottom / left */
+  /* padding: 9.6rem 0 12.8rem 0; */
+
+  /* top / horizontal / left */
+  padding: 4.8rem 0 12.8rem;
+  scroll-margin-top: 6rem;
+}
+
+.cta {
+  display: grid;
+  /* 2/3 = 66.6% + 1/3 = 33.3% */
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #f4941e; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(244, 148, 30, 0.8),
+    rgba(236, 242, 237, 0.5)
+  );
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .heading-secondary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("images/office-small.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
+}
+.btn--form {
+  background-color: #2cb474;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 2.1rem;
+  font-weight: 700;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
 /* Start the footer section */
 .footer {
   padding: 8.4rem 0;
@@ -425,6 +536,7 @@
 }
 .second-col .our-services-list {
   list-style: none;
+  font-size: 1.5rem;
 }
 .second-col .our-services-list li:not(:last-child) {
   margin-bottom: 1.2rem;
@@ -436,8 +548,9 @@
 .third-col h5 {
   margin-bottom: 1.2rem;
 }
-.third-col .contact-list {
+.third-col .contact-list-main {
   list-style: none;
+  font-size: 1.5rem;
 }
 .contact-list-social {
   display: flex;

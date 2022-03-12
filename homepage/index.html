@@ -11,10 +11,14 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/images/Babak-logo-transparent.png"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css" />
-    <link rel="stylesheet" href="mediaqueries.css"
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
     <!-- The start header section -->
@@ -29,16 +33,16 @@
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-link">
-            <a href="#" class="nav-link">About us</a>
+            <a href="#about-us" class="nav-link">About us</a>
           </li>
           <li class="main-nav-link">
-            <a href="#" class="nav-link">Our Services</a>
+            <a href="#our-services" class="nav-link">Our Services</a>
           </li>
           <li class="main-nav-link">
-            <a href="#" class="nav-link"> Our Team</a>
+            <a href="#our-team" class="nav-link"> Our Team</a>
           </li>
           <li class="main-nav-link">
-            <a href="#" class="nav-link call-to-action"> Request a call</a>
+            <a href="#cta" class="nav-link call-to-action"> Request a call</a>
           </li>
         </ul>
       </nav>
@@ -88,7 +92,7 @@
         </div>
       </section>
       <!-- About Us Section -->
-      <section class="about-us">
+      <section class="about-us" id="about-us">
         <h3 class="heading-secondary">About us</h3>
         <div class="grid--2-cols container responsive">
           <div class="right-col">
@@ -152,7 +156,7 @@
         </div>
       </section>
       <!-- Our Services -->
-      <section class="our-services">
+      <section class="our-services" id="our-services">
         <h3 class="heading-secondary">Our Services</h3>
         <div class="our-services-cards container grid--3-cols responsive">
           <div class="our-services-card">
@@ -203,7 +207,7 @@
         </div>
       </section>
       <!-- Our Team -->
-      <section class="our-team container margin-bottom-big">
+      <section class="our-team container margin-bottom-big" id="our-team">
         <h2 class="heading-secondary">Our Team</h2>
         <div class="our-team-cards grid--3-cols responsive">
           <div class="our-team-card">
@@ -247,6 +251,64 @@
           </div>
         </div>
       </section>
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Request a free counsolation!</h2>
+              <p class="cta-text">
+                We will assist you setting up your business efforlessly
+              </p>
+
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    placeholder="John Smith"
+                    name="full-name"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="email">Email address</label>
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="me@example.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <div>
+                  <label for="select-where">Where did you hear from us?</label>
+                  <select id="select-where" name="select-where" required>
+                    <option value="">Please choose one option:</option>
+                    <option value="friends">Friends and family</option>
+                    <option value="youtube">YouTube video</option>
+                    <option value="podcast">Podcast</option>
+                    <option value="ad">Facebook ad</option>
+                    <option value="others">Others</option>
+                  </select>
+                </div>
+
+                <button class="btn btn--form">Sign up now</button>
+
+                <!-- <input type="checkbox" />
+                <input type="number" /> -->
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="Woman enjoying food"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- The end of the main section -->
     <!-- The start of footer -->
@@ -272,7 +334,7 @@
           <h5>Contact Info</h5>
           <ul class="contact-list-main">
             <li class="margin"><a href="">Email: info@babak.com</a></li>
-            <li class="contact-list-social margin">
+            <li class="contact-list-social">
               Social:
               <ul class="contact-list-social-icons">
                 <li>
