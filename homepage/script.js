@@ -21,6 +21,15 @@ const obs = new IntersectionObserver(
 );
 obs.observe(sectionHeroEl);
 
+// Make mobile navigation work
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+
+btnNavEl.addEventListener("click", function () {
+  headerEl.classList.toggle("nav-open");
+});
+
 // The Slider Functionality
 const slider = function () {
   const slides = document.querySelectorAll(".slide");
@@ -109,3 +118,23 @@ const slider = function () {
   }, 3000);
 };
 slider();
+
+//Animate team text
+
+var text = document.querySelectorAll(".our-team-info");
+function scrolListener(e) {
+  var screenTop = document.scrollingElement.scrollTop;
+  var screenBottom = screenTop + innerHeight;
+  console.log(text);
+  for (let i = 0; i < text.length; i++) {
+    var textTop = text[i].getBoundingClientRect().top;
+    console.log(textTop);
+  }
+  if (textTop < screenBottom && textTop < screenTop) {
+    text.forEach((text) => {
+      text.classList.add("showtext");
+      text.classList.remove("hidetext");
+    });
+  }
+}
+document.onscroll = scrolListener;

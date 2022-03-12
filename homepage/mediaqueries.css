@@ -1,0 +1,97 @@
+@media (max-width: 900px) {
+  .heading-primary {
+    font-size: 3.8rem;
+  }
+  .about-us {
+    padding: 0 2.1rem;
+  }
+  .responsive {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .responsive .reorder {
+    order: 1;
+    padding: 2.3rem 0;
+  }
+  .right-col {
+    margin-bottom: 6rem;
+  }
+}
+
+@media (max-width: 800px) {
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 999999;
+  }
+
+  .main-nav {
+    background-color: #ecf2ed;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    z-index: 999999;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .our-services {
+    margin: 0 auto;
+  }
+  .responsive {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 4rem;
+  }
+  .first-col,
+  .second-col,
+  .third-col {
+    border: none;
+    text-align: center;
+  }
+}

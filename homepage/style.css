@@ -1,20 +1,3 @@
-/* CSS RESET */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* CSS GENERAL RULES */
-html {
-  /* Setting the root font size to 10px, to use it with responsive unites like rem */
-  font-size: 62%;
-}
-body {
-  font-family: "Inter", sans-serif;
-  font-family: "Rubik", sans-serif;
-}
-
 /* End styling  the header section */
 .header {
   display: flex;
@@ -74,6 +57,24 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transform: scale(0.95);
 }
+/* MOBILE */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 /* End styling  the header section */
 /* Start the slider styles */
 .slider {
@@ -125,7 +126,7 @@ body {
 .slider__btn {
   position: absolute;
   top: 50%;
-  z-index: 1000;
+  z-index: 10;
   font-size: 3.2rem;
   width: 4.8rem;
   height: 4.8rem;
@@ -361,12 +362,39 @@ body {
   border-radius: 6px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.08);
+}
+.our-team-card .card-image {
+  transition: all 0.4s;
+}
+.our-team-card .card-image:hover {
+  transform: scale(1.1);
+  /* transform: scale3d(4deg); */
 }
 .our-team-cards {
   width: 100%;
 }
 .our-team-info {
   padding: 1.2rem 1rem;
+}
+
+/* Animate Team Text */
+.showtext {
+  display: block;
+  animation: revealteam 3.5s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+}
+.hidetext {
+  opacity: 0;
+  transform: translate(0, 100%);
+}
+
+@keyframes revealteam {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 /* End Team Section */
 /* Start the footer section */

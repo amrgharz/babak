@@ -14,6 +14,7 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="mediaqueries.css"
   </head>
   <body>
     <!-- The start header section -->
@@ -41,6 +42,10 @@
           </li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <!-- The end header section -->
     <!-- The start of the main section -->
@@ -70,7 +75,7 @@
           <div class="slide slide--3">
             <div class="testimonial">
               <h2 class="heading-primary slide-title">
-                Premeum business services
+                Premium business services
               </h2>
               <p class="section-hero-paragraph">
                 A solution for every business need
@@ -85,10 +90,10 @@
       <!-- About Us Section -->
       <section class="about-us">
         <h3 class="heading-secondary">About us</h3>
-        <div class="grid--2-cols container">
+        <div class="grid--2-cols container responsive">
           <div class="right-col">
             <div class="animated-text-container">
-              <div class="we-grow animated-text">We Grow!</div>
+              <div class="we-grow animated-text">We Grow! &nbsp;</div>
               <div class="your-business animated-text">
                 <span>By meking your business successful!</span>
               </div>
@@ -96,54 +101,48 @@
             <div class="right-col-overlay"></div>
           </div>
           <div class="left-col">
-            <div class="module">
-              <p class="about-us-paragraph">
-                We at BABAK offer you a great opportunity to expand your
-                business into the United Arab Emirates or open a totally new
-                business to grab the many opportunities laying in the region
-                market.
-              </p>
-              <p class="about-us-paragraph">
-                BABAK offers provides you with the trade license registration,
-                offices, admin support and legal consultation across all the
-                stages of your business.
-              </p>
-              <p class="about-us-paragraph">
-                No matter what type of business you want to open in the United
-                Arab Emirates; our team has vast experience and knowledge in the
-                laws of UAE, and are always ready to deliver to you a
-                ready-to-go business customized just how you want it so you can
-                start working immediately.
-              </p>
-            </div>
+            <p class="about-us-paragraph">
+              We at BABAK offer you a great opportunity to expand your business
+              into the United Arab Emirates or open a totally new business to
+              grab the many opportunities laying in the region market.
+            </p>
+            <p class="about-us-paragraph">
+              BABAK offers provides you with the trade license registration,
+              offices, admin support and legal consultation across all the
+              stages of your business.
+            </p>
+            <p class="about-us-paragraph">
+              No matter what type of business you want to open in the United
+              Arab Emirates; our team has vast experience and knowledge in the
+              laws of UAE, and are always ready to deliver to you a ready-to-go
+              business customized just how you want it so you can start working
+              immediately.
+            </p>
           </div>
         </div>
-        <div class="grid--2-cols container">
-          <div class="right-col">
-            <div class="module">
-              <p class="about-us-paragraph">
-                We at BABAK offer you a great opportunity to expand your
-                business into the United Arab Emirates or open a totally new
-                business to grab the many opportunities laying in the region
-                market.
-              </p>
-              <p class="about-us-paragraph">
-                BABAK offers provides you with the trade license registration,
-                offices, admin support and legal consultation across all the
-                stages of your business.
-              </p>
-              <p class="about-us-paragraph">
-                No matter what type of business you want to open in the United
-                Arab Emirates; our team has vast experience and knowledge in the
-                laws of UAE, and are always ready to deliver to you a
-                ready-to-go business customized just how you want it so you can
-                start working immediately.
-              </p>
-            </div>
+        <div class="grid--2-cols container responsive">
+          <div class="right-col reorder">
+            <p class="about-us-paragraph">
+              We at BABAK offer you a great opportunity to expand your business
+              into the United Arab Emirates or open a totally new business to
+              grab the many opportunities laying in the region market.
+            </p>
+            <p class="about-us-paragraph">
+              BABAK offers provides you with the trade license registration,
+              offices, admin support and legal consultation across all the
+              stages of your business.
+            </p>
+            <p class="about-us-paragraph">
+              No matter what type of business you want to open in the United
+              Arab Emirates; our team has vast experience and knowledge in the
+              laws of UAE, and are always ready to deliver to you a ready-to-go
+              business customized just how you want it so you can start working
+              immediately.
+            </p>
           </div>
           <div class="left-col">
             <div class="animated-text-container">
-              <div class="we-grow animated-text">Our Goal!</div>
+              <div class="we-grow animated-text">Our Goal! &nbsp;</div>
               <div class="your-business animated-text">
                 <span>Is to make you achieve your goals</span>
               </div>
@@ -155,7 +154,7 @@
       <!-- Our Services -->
       <section class="our-services">
         <h3 class="heading-secondary">Our Services</h3>
-        <div class="our-services-cards container grid--3-cols">
+        <div class="our-services-cards container grid--3-cols responsive">
           <div class="our-services-card">
             <img
               src="images/office-small.jpg"
@@ -173,7 +172,7 @@
           </div>
           <div class="our-services-card our-services-card-best">
             <img
-              src="images/office-small.jpg"
+              src="images/office-1.jpg"
               alt="Office Picture"
               class="card-image"
             />
@@ -188,7 +187,7 @@
           </div>
           <div class="our-services-card">
             <img
-              src="images/office-small.jpg"
+              src="images/office-3.webp"
               alt="Office Picture"
               class="card-image"
             />
@@ -206,16 +205,18 @@
       <!-- Our Team -->
       <section class="our-team container margin-bottom-big">
         <h2 class="heading-secondary">Our Team</h2>
-        <div class="our-team-cards grid--3-cols">
+        <div class="our-team-cards grid--3-cols responsive">
           <div class="our-team-card">
             <img
               src="images/team/ibrahim-1-1.jpg"
               alt="Ibrahim Al hosani"
               class="card-image"
             />
-            <div class="our-team-info">
-              <h4 class="team-member-heading heading-tertiary">Hossam Deep</h4>
-              <p class="ceo">Marketing Manager</p>
+            <div class="our-team-info hidetext">
+              <h4 class="team-member-heading heading-tertiary">
+                Ibrahim Al Hosani
+              </h4>
+              <p class="ceo">CEO & Founder</p>
             </div>
           </div>
 
@@ -225,7 +226,7 @@
               alt="Ibrahim Al hosani"
               class="card-image"
             />
-            <div class="our-team-info">
+            <div class="our-team-info hidetext">
               <h4 class="team-member-heading heading-tertiary">Hossam Deep</h4>
               <p class="ceo">Marketing Manager</p>
             </div>
@@ -237,9 +238,11 @@
               alt="Ibrahim Al hosani"
               class="card-image"
             />
-            <div class="our-team-info">
-              <h4 class="team-member-heading heading-tertiary">Hossam Deep</h4>
-              <p class="ceo">Marketing Manager</p>
+            <div class="our-team-info hidetext">
+              <h4 class="team-member-heading heading-tertiary">
+                Sameh Shaaban
+              </h4>
+              <p class="ceo">Legal Reaearcher</p>
             </div>
           </div>
         </div>
@@ -249,7 +252,7 @@
     <!-- The start of footer -->
     <footer class="footer">
       <!-- <hr class="container" /> -->
-      <div class="grid--3-cols container">
+      <div class="grid--3-cols container responsive">
         <div class="first-col">
           <img
             src="images/Babak-logo-transparent.png"
@@ -307,6 +310,19 @@
       </p>
     </footer>
     <!-- The end of footer -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
