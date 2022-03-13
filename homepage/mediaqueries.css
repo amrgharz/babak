@@ -113,4 +113,7 @@
     height: 120vh;
     scroll-margin-top: 6rem;
   }
+  .header {
+    position: fixed;
+  }
 }
