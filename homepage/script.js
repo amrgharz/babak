@@ -153,7 +153,7 @@ var text = document.querySelectorAll(".our-team-info");
 function scrolListener(e) {
   var screenTop = document.scrollingElement.scrollTop;
   var screenBottom = screenTop + innerHeight;
-  console.log(text);
+
   for (let i = 0; i < text.length; i++) {
     var textTop = text[i].getBoundingClientRect().top;
     console.log(textTop);
